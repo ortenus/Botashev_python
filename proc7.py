@@ -1,0 +1,9 @@
+def invert_digits(k):
+    rev = 0
+    while k > 0:
+        rev = rev * 10 + k % 10
+        k //= 10
+    return rev
+for _ in range(5):
+    num = int(input())
+    print(invert_digits(num))
